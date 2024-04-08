@@ -45,6 +45,7 @@ namespace Dcat\Admin {
      * @property Grid\Column|Collection payload
      * @property Grid\Column|Collection exception
      * @property Grid\Column|Collection failed_at
+     * @property Grid\Column|Collection file_name
      * @property Grid\Column|Collection cate_id
      * @property Grid\Column|Collection content
      * @property Grid\Column|Collection open
@@ -99,6 +100,7 @@ namespace Dcat\Admin {
      * @method Grid\Column|Collection payload(string $label = null)
      * @method Grid\Column|Collection exception(string $label = null)
      * @method Grid\Column|Collection failed_at(string $label = null)
+     * @method Grid\Column|Collection file_name(string $label = null)
      * @method Grid\Column|Collection cate_id(string $label = null)
      * @method Grid\Column|Collection content(string $label = null)
      * @method Grid\Column|Collection open(string $label = null)
@@ -158,6 +160,7 @@ namespace Dcat\Admin {
      * @property Show\Field|Collection payload
      * @property Show\Field|Collection exception
      * @property Show\Field|Collection failed_at
+     * @property Show\Field|Collection file_name
      * @property Show\Field|Collection cate_id
      * @property Show\Field|Collection content
      * @property Show\Field|Collection open
@@ -212,6 +215,7 @@ namespace Dcat\Admin {
      * @method Show\Field|Collection payload(string $label = null)
      * @method Show\Field|Collection exception(string $label = null)
      * @method Show\Field|Collection failed_at(string $label = null)
+     * @method Show\Field|Collection file_name(string $label = null)
      * @method Show\Field|Collection cate_id(string $label = null)
      * @method Show\Field|Collection content(string $label = null)
      * @method Show\Field|Collection open(string $label = null)
@@ -235,7 +239,7 @@ namespace Dcat\Admin {
     class Show {}
 
     /**
-     
+     * @method \App\Admin\Extensions\Form\CKEditor ckeditor(...$params)
      */
     class Form {}
 
